@@ -1,13 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Slider</title>
     <link rel="stylesheet" href="./src/style/style.css">
 </head>
+
 <body>
-    <div id="slider"></div>
-    <script src="./dist/main.bundle.js"></script>
+    <div class="slider" id="slider">
+        <div class="slider__wrapper">
+            <div class="slider__items">
+                <div class="slider__item">
+                    <img src="./assets/images/slider-images-1.png" alt="slider image">
+                </div>
+                <div class="slider__item">
+                    <img src="./assets/images/slider-images-2.png" alt="slider image">
+                </div>
+                <div class="slider__item">
+                    <img src="./assets/images/slider-images-3.png" alt="slider image">
+                </div>
+                <div class="slider__item">
+                    <img src="./assets/images/slider-images-4.png" alt="slider image">
+                </div>
+            </div>
+            <div class="slider__nav">
+                <a class="slider__nav_prev" onclick="previousSlide()">&#10094;</a>
+                <a class="slider__nav_next" onclick="nextSlide()">&#10095;</a>
+            </div>
+    </div>
+    <div class="slider-dots">
+        <span class="slider-dots__item active" onclick="currentSlide(1)"></span>
+        <span class="slider-dots__item" onclick="currentSlide(2)"></span>
+        <span class="slider-dots__item" onclick="currentSlide(3)"></span>
+        <span class="slider-dots__item" onclick="currentSlide(4)"></span>
+    </div>
+    <!-- <script src="./dist/main.bundle.js"></script> -->
+    <script src="src/js/index.js"></script>
+
+
 </body>
+
 </html>
